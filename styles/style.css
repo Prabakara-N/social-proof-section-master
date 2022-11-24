@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --clr-attributon: #3e52a3;
+  --clr-Very-Dark-Magenta: #502050;
+  --clr-Soft-Pink: #ee68a4;
+  --clr-Dark-Grayish-Magenta: #937b92;
+  --clr-Light-Grayish-Magenta: #f7f2f7;
+  --clr-White: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+
+  background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  width: 90%;
+  padding: 4rem 6rem;
+  margin: 5rem auto;
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: auto;
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* top */
+
+.top-section {
+  display: flex;
+}
+.left-container {
+  width: 35%;
+  margin: auto;
+}
+
+.title {
+  color: var(--clr-Very-Dark-Magenta);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.left-para {
+  color: var(--clr-Dark-Grayish-Magenta);
+  font-size: 1.25rem;
+}
+
+.right-container {
+  width: 55%;
+  margin: auto;
+  padding: 1rem;
+  margin-left: 5rem;
+}
+
+.star-one,
+.star-two,
+.star-three {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-Light-Grayish-Magenta);
+  padding: 12px 25px;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.star-one,
+.star-two {
+  margin-bottom: 1rem;
+}
+
+.star-one {
+  margin-left: 4rem;
+}
+
+.star-two {
+  margin-left: 7rem;
+}
+
+.star-three {
+  margin-left: 10rem;
+}
+.star-title {
+  padding-left: 3rem;
+  color: #502050;
+}
+
+.stars {
+  width: 20px;
+  height: 20px;
+  padding-right: 7px;
+}
+
+/* bottom */
+.bottom-section {
+  padding-top: 4rem;
+  padding-left: 0.75rem;
+  display: flex;
+  gap: 2.75rem;
+}
+
+.card-one,
+.card-two,
+.card-three {
+  background-color: #502050;
+  padding: 2rem;
+  width: 30%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card-two {
+  /* margin-top: 1rem; */
+  position: relative;
+  /* top: 1rem; */
+}
+
+.card-three {
+  /* margin-bottom: -2rem; */
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.details {
+  color: #ee68a4;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.name,
+.card-para {
+  color: var(--clr-Light-Grayish-Magenta);
+}
+
+.card-para {
+  line-height: 20px;
+}
+
+/* media screen */
+
+@media screen and (max-width: 1440px) {
+  .star-one,
+  .star-two,
+  .star-three {
+    width: 80%;
+    margin-left: -1rem;
+  }
+
+  .star-two {
+    margin-left: 2rem;
+  }
+
+  .star-three {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 3rem 3rem;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-container,
+  .right-container {
+    width: 90%;
+    margin: auto;
+    /* margin-left: 2.65rem; */
+  }
+
+  .right-container {
+    margin-top: 2rem;
+  }
+
+  .star-one,
+  .star-two,
+  .star-three {
+    width: 100%;
+  }
+
+  .star-two {
+    margin-left: -1rem;
+  }
+
+  .star-three {
+    margin-left: -1rem;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .card {
+    padding: 3rem 1rem;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .title,
+  .left-para {
+    text-align: center;
+    /* margin-right: 3rem; */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .right-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .starz {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .star-title {
+    margin-left: -3rem;
+  }
+
+  .star-one,
+  .star-two,
+  .star-three {
+    width: 100%;
+    padding: 1rem 10px;
+    margin-top: 0.5rem;
+    margin-left: 1px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .bottom-section {
+    width: 100%;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    width: 100%;
+    margin: auto;
+  }
+}
